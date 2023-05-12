@@ -3,13 +3,10 @@ import ProfileCard from "./ProfileCard";
 import ExpandingCardsGif from './gifs/expanding_cards.gif';
 import ProgressStepsGif from './gifs/progress_steps.gif';
 import RotatingNavigationGif from './gifs/rotating_navigation.gif';
-import HiddenSearchWidget from './gifs/hidden_search_widget.gif';
+import HiddenSearchWidgetGif from './gifs/hidden_search_widget.gif';
+import WeatherDashboardGif from './gifs/weather_dashboard.gif';
+import BlurryLoadingPageGif from './gifs/blurry_loading_page.gif';
 
-const description1  = [
-    "used Javascript, CSS, and HTML",
-    "cards will display small on the screen with a background image when not clicked",
-    "cards will expand and a heading will appear with a css transition when clicked on"
-]
 
 function App(){
   return(
@@ -25,40 +22,50 @@ function App(){
             <div className="rows">
                 <div className="columns">
                     <div className="column is-4">
+                        <ProfileCard
+                            title="Weather Dashboard"
+                            image={WeatherDashboardGif}
+                            description="A weather map application that allows users to get a 5-day forecast and current weather specified for a specific location pinned on the map: used Javascript, CSS, and HTML"
+                        />
+                    </div>
+                    <div className="column is-4">
                       <ProfileCard
-                          title="Project 1: Expanding Cards"
+                          title="Expanding Cards"
                           image={ExpandingCardsGif}
-                          description={description1}
+                          description="A simple page that allows users to click on the images to expand the view and see the header appear in the bottom-left corner: used Javascript, CSS, and HTML"
                       />
                     </div>
                     <div className="column is-4">
                       <ProfileCard
-                          title="Project 2: Progress Steps"
+                          title="Progress Steps"
                           image={ProgressStepsGif}
-                          description="- used Javascript, CSS, and HTML
-      - clicking the next button transitions the circles to the next number
-      - when we get to the last one the next button becomes disabled
-      - when we get to the first one the previous button becomes disabled"
+                          description="A simple widget that could be used on forms that allows users to click the next and previous buttons to go to the next and previous circles: used Javascript, CSS, and HTML"
                       />
                   </div>
+                </div>
+                <div class="columns">
                     <div className="column is-4">
                         <ProfileCard
-                            title="Project 3: Rotating Navbar"
+                            title="Rotating Navbar"
                             image={RotatingNavigationGif}
-                            description="- used Javascript, CSS, and HTML
-- once you click on the navigation icon, the page rotates and the navigation appears at the bottom of the page
-- the icon also changes to a close button once the navigation appears"
+                            description="A page that allows users to get to the navbar by rotating the page and the navigation appears at the bottom-left corner of the screen: used Javascript, CSS, and HTML"
+                        />
+                    </div>
+                    <div className="column is-4">
+                        <ProfileCard
+                            title="Hidden Search Widget"
+                            image={HiddenSearchWidgetGif}
+                            description="A super simple widget that allows users to toggle the search icon to have the searchbar expand and collapse: used Javascript, CSS, and HTML"
+                        />
+                    </div>
+                    <div className="column is-4">
+                        <ProfileCard
+                            title="Blurry Loading Page"
+                            image={BlurryLoadingPageGif}
+                            description="When the user refreshed and the page reloads the image becomes clear and the loading percentage becomes transparent: used Javascript, CSS, and HTML"
                         />
                     </div>
                 </div>
-              <div className="column is-4">
-                <ProfileCard
-                    title="Project 4: Hidden Search Widget"
-                    image={HiddenSearchWidget}
-                    description="- used Javascript, CSS, and HTML
-- when you toggle the search icon the search field expands and collapses"
-                />
-              </div>
             </div>
           </section>
         </div>
