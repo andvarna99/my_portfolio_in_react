@@ -11,9 +11,9 @@ function ProfileCard({ title , handle , image , description}){
                     <div className="title is-4"> {title}</div>
                     <div className="subtitle is-6">{handle}</div>
                 </div>
-                <div className="content">
-                    {description}
-                </div>
+                <ul className="content">
+                    <li>{description}</li>
+                </ul>
             </div>
         </div>
     );

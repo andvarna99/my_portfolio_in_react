@@ -5,6 +5,11 @@ import ProgressStepsGif from './gifs/progress_steps.gif';
 import RotatingNavigationGif from './gifs/rotating_navigation.gif';
 import HiddenSearchWidget from './gifs/hidden_search_widget.gif';
 
+const description1  = [
+    "used Javascript, CSS, and HTML",
+    "cards will display small on the screen with a background image when not clicked",
+    "cards will expand and a heading will appear with a css transition when clicked on"
+]
 
 function App(){
   return(
@@ -23,9 +28,7 @@ function App(){
                       <ProfileCard
                           title="Project 1: Expanding Cards"
                           image={ExpandingCardsGif}
-                          description="- used Javascript, CSS, and HTML
-      - cards will display small on the screen with a background image when not clicked
-      - cards will expand and a heading will appear with a css transition when clicked on"
+                          description={description1}
                       />
                     </div>
                     <div className="column is-4">
